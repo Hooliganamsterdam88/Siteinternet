@@ -1,0 +1,217 @@
+echo "# Siteinternet" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Hooliganamsterdam88/Siteinternet.git
+git push -u origin main
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersécurité</title>
+    <style>
+        /* Styles CSS existants restent inchangés */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative; /* Ajout pour positionner l'onglet d'identification */
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Assure que la barre de navigation est au-dessus du contenu */
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .content {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #004080;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        /* Nouveau style pour le formulaire */
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin: 5px;
+            width: 300px;
+            font-size: 16px;
+        }
+        form button {
+            padding: 10px 20px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        form button:hover {
+            background-color: #003366;
+        }
+        /* Style pour l'onglet d'identification */
+        .identification-tab {
+            position: absolute;
+            top: 10px; /* Ajustez la position verticale selon vos besoins */
+            right: 20px; /* Ajustez la position horizontale selon vos besoins */
+            background-color: #004080;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .identification-tab:hover {
+            background-color: #003366;
+        }
+        /* Style pour encadrer les titres */
+        h1, h2, h3 {
+            border: 2px solid #004080;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            background-color: #f0f8ff; /* Couleur de fond légère pour les titres */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><strong>Bienvenue sur notre site de Cybersécurité</strong></h1>
+        <h2><strong>Votre source fiable pour la protection en ligne</strong></h2> <!-- Ajout du sous-titre -->
+        <!-- Onglet d'identification -->
+        <div class="identification-tab">Identifiez-vous</div>
+    </header>
+    <nav>
+        <a href="#home">Accueil</a>
+        <a href="#threats">Menaces</a>
+        <a href="#protection">Protection</a>
+        <a href="#resources">Ressources</a>
+        <a href="#rules">Règles</a>
+        <a href="#faq">Questions/Réponses</a>
+        <a href="#comments">Commentaires</a> <!-- Lien vers la section Commentaires -->
+    </nav>
+    <div class="content" id="home">
+        <h2><strong>Accueil</strong></h2>
+        <p>Bienvenue sur notre site dédié à la cybersécurité. Ici, vous trouverez des informations et des ressources pour vous aider à protéger vos systèmes et vos données contre les menaces numériques. Explorez les différentes sections pour en savoir plus.</p>
+    </div>
+    <div class="content" id="threats">
+        <h2><strong>Types de Menaces</strong></h2>
+        <ul>
+            <li><strong>Malware :</strong> Logiciels malveillants conçus pour endommager ou infiltrer un système.</li>
+            <li><strong>Phishing :</strong> Tentatives de fraude pour obtenir des informations sensibles en se faisant passer pour une entité de confiance.</li>
+            <li><strong>Ransomware :</strong> Logiciels malveillants qui chiffrent les données et demandent une rançon pour les déchiffrer.</li>
+        </ul>
+    </div>
+    <div class="content" id="protection">
+        <h2><strong>Comment se Protéger ?</strong></h2>
+        <ul>
+            <li><strong>Utiliser des logiciels antivirus :</strong> Installer et maintenir à jour des logiciels de sécurité.</li>
+            <li><strong>Former les utilisateurs :</strong> Sensibiliser les utilisateurs aux menaces et aux bonnes pratiques de sécurité.</li>
+            <li><strong>Faire des sauvegardes régulières :</strong> Sauvegarder les données importantes régulièrement.</li>
+        </ul>
+    </div>
+    <div class="content" id="resources">
+        <h2><strong>Ressources Utiles</strong></h2>
+        <ul>
+            <li><a href="https://www.anssi.gouv.fr" target="_blank">ANSSI - Agence nationale de la sécurité des systèmes d'information</a></li>
+            <li><a href="https://www.cybermalveillance.gouv.fr" target="_blank">Cybermalveillance.gouv.fr</a></li>
+            <li><a href="https://www.cert.ssi.gouv.fr" target="_blank">CERT-FR - Centre gouvernemental de veille, d'alerte et de réponse aux attaques informatiques</a></li>
+            <li><a href="https://www.prevention-informatique.fr" target="_blank">Prévention Informatique</a> - Ce site peut vous être très utile si vous avez des doutes pendant votre navigation.</li>
+        </ul>
+    </div>
+    <!-- Section Règles -->
+    <div class="content" id="rules">
+        <h2><strong>Règles de Cybersécurité</strong></h2>
+        <h3><strong>Règle N°1 – Utiliser un mot de passe sûr</strong></h3>
+        <ul>
+            <li>Un mot de passe sécurisé contient au moins 12 caractères.</li>
+            <li>Utilisez des mots de passe différents pour chaque compte.</li>
+            <li>Ne donnez pas le mot de passe à autrui, même pas à des amis.</li>
+        </ul>
+        
+        <h3><strong>Règle N°2 – Réfléchir avant de cliquer !</strong></h3>
+        <ul>
+            <li>Éviter de cliquer sans réfléchir sur des liens, des pièces jointes dans les e-mails ou sur d’autres sites web.</li>
+            <li>Vérifier l’expéditeur (vérifier l’authenticité de l’expéditeur, demander en cas de doute).</li>
+            <li>Ne pas télécharger de fichiers illégaux.</li>
+            <li>Télécharger des fichiers uniquement sur les sites officiels.</li>
+        </ul>
+        
+        <h3><strong>Règle N°5 – Se protéger du piratage</strong></h3>
+        <ul>
+            <li>Installer les mises à jour (scan du système, contrôle de sécurité).</li>
+            <li>S’autoprotéger : placer un cache sur la caméra/webcam de l’appareil.</li>
+            <li>Utiliser un logiciel antivirus.</li>
+            <li>Utiliser un mot de passe sûr, l’authentification à double facteur.</li>
+            <li>Faire des sauvegardes régulièrement.</li>
+            <li>Créer des comptes pour chaque utilisateur d’un même appareil.</li>
+            <li>Utiliser des programmes de localisation et de suppression à distance.</li>
+            <li>Effacer le contenu de l’appareil.</li>
+            <li>Faire attention à la sécurité des réseaux Wi-Fi.</li>
+            <li>Vérifier les connexions https.</li>
+            <li>Ne pas télécharger de logiciels crackés ou illégaux.</li>
+            <li>Utiliser un VPN (Virtual Private Network).</li>
+        </ul>
+    </div>
+    <!-- Section Questions/Réponses -->
+    <div class="content" id="faq">
+        <h2><strong>Questions/Réponses</strong></h2>
+        <h3><strong>Question 1: Quelle est la meilleure manière de sécuriser un réseau Wi-Fi domestique ?</strong></h3>
+        <p>Pour sécuriser un réseau Wi-Fi domestique, il est recommandé d'utiliser un mot de passe fort, de désactiver le WPS, de mettre à jour régulièrement le firmware de votre routeur, et de considérer l'utilisation d'un réseau invité pour les appareils moins sécurisés.</p>
+        
+        <h3><strong>Question 2: Comment savoir si mon ordinateur est infecté par un malware ?</strong></h3>
+        <p>Les signes d'une infection par malware peuvent inclure des performances ralenties, des fenêtres pop-up inhabituelles, des programmes inconnus qui s'exécutent au démarrage, et des messages d'erreur fréquents. L'exécution d'une analyse complète avec un logiciel antivirus peut aider à détecter et éliminer les malwares.</p>
+    </div>
+    <!-- Section Commentaires -->
+    <div class="content" id="comments">
+        <h2><strong>Commentaires</strong></h2>
+        <!-- Formulaire de commentaires intégré -->
+        <form action="https://formspree.io/f/mrbzgaej" method="POST">
+            <label>
+                Votre email :
+                <input type="email" name="email" required>
+            </label>
+            <br>
+            <label>
+                Votre message :
+                <textarea name="message" required></textarea>
+            </label>
+            <br>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 Cybersécurité. Tous droits réservés.</p>
+    </div>
+</body>
+</html>
+</html>
